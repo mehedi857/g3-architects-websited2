@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G3 Architects</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* main > section >div > img{
+            width: 100%;
+        } */
+    @media screen and (max-width:576px) {
+    #btn2{
+      display: flex;
+      margin: 0 auto;
+    }
+    .footer{
+       width: 100%; 
+       
+    }
+
+        .navba, .nav-links{
+        flex-direction: column;
+    }
+    .teams{
+        flex-direction: column;
+    }
+    .ours-futures{
+        margin-left: 20px;
+        /* text-align: center; */
+    }
+    .team-img-container, .sponser-comp{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+
+
+    .facts-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 25px;
+     }
+
+    .some-facts,h3 p{
+        text-align: center;
+    }
+    
+}   
+    .sponser-comp{
+        justify-items: center;
+        gap: 20px;
+    }
+    
+
+    @media screen and (min-width:576px) and (max-width:992px) {
+    
+    #btn2{
+      display: flex;
+      margin: 0 auto;
+    }
+        .teams{
+        flex-direction: column;
+    }
+     .ours-futures{
+        margin: 50px auto;
+     }
+     .facts-container, .sponser-comp{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+     }
+    
+    .some-facts,h3 p{
+        text-align: center;
+    }
+    .footer{
+        width: 100%;
+    }
+}
+    /* .facts-container{
+        display: flex;
+        justify-content: space-between;
+    } */
+    </style>
+</head>
+<body>
+    <header class="bg-light">
+        <nav class="navbar display-flex">
+            <h2 class="brand">G3- Architects</h2>
+            <ul class="nav-links display-flex">
+                <li class="nav-item"><a href="" class="nav-link text-gray">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-gray">About</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-gray">Contact Us</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-gray">Login</a></li>
+            </ul>
+            
+        </nav>
+        <div class="banner">
+            <div class="banner-conten">
+                <h1 class="banner-title">Brand New Group of Architects</h1>
+                <p class="banner-dip text-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                <button class="button-primary">Explore More</button>
+            </div>
+            <img src="images/banner.png" alt="">
+        </div>
+    </header>
+    <main class="">
+        <!-- teams section -->
+        <section class="teams display-flex">
+            <div class="team-img-container">
+                <img src="images/team1.png" alt="">
+                <img src="images/team2.png" alt="">
+                <img src="images/team3.png" alt="">
+                <img src="images/team4.png" alt="">
+            </div>
+            <div class="ours-futures">
+                <h3 class="section-titles"> <span id="quick-list" class="text-light-gray">Quick list</span> <span>of Our</span> <span class="feat-color">Features</span></h3>
+                <p class="futures-diss text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                <button id="btn2" class="button-primary">Explore More</button>
+            </div>
+        </section>
+         <!-- same factsss -->
+          <section class="some-facts">
+            <h3 class="section-titles">Some Facts</h3>
+            <p  class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            <div class="facts-container">
+                <div class="fact-card display-flex">
+                   <div>
+                     <img src="images/icons/ribon.png" alt="" class="facts-icon">
+                    <h4 class="facts-number">54</h4>
+                    <h5 class="facts-name text-light-gray">Awards Winnings</h5>
+                   </div>
+                </div>
+                <div class="fact-card  display-flex">
+                    <div>
+                    <img src="images/icons/projects.png" alt="" class="facts-icon">
+                    <h4 class="facts-number">1454</h4>
+                    <h5 class="facts-name text-light-gray">Project Finished</h5>
+                    </div>
+                </div>
+                <div class="fact-card  display-flex">
+                    <div>
+                        <img src="images/icons/customers.png" alt="" class="facts-icon">
+                    <h4 class="facts-number">590</h4>
+                    <h5 class="facts-name text-light-gray">Clients Worked</h5>
+                    </div>
+                </div>
+                <div class="fact-card  display-flex">
+                    <div>
+                        <img src="images/icons/email.png" alt="" class="facts-icon">
+                    <h4 class="facts-number">54585</h4>
+                    <h5 class="facts-name text-light-gray">Email Send</h5>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <!-- Our sponser -->
+         <section class="our-sponser">
+            <div class="sponser-info">
+                <h3 class="section-titles">Our Sponspors</h3>
+                <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            </div>
+            <div class="sponser-comp">
+                <img src="images/sponsors/amazon.png" alt="">
+                <img src="images/sponsors/google.png" alt="">
+                <img src="images/sponsors/figma.png" alt="">
+                <img src="images/sponsors/telerama.png" alt="">
+                <img src="images/sponsors/spotify.png" alt="">
+            </div>
+         </section>
+    </main>
+    <footer class="footer">
+        <P id="all" class="text-light-gray">All rights reserved copyright@2023 startup landing page design</P>
+    </footer>
+</body>
+</html>
