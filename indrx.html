@@ -25,6 +25,17 @@
     .teams{
         flex-direction: column;
     }
+    /* features */
+    .Features{
+        flex-direction: column-reverse;
+    }
+    #Experience-badge{
+        /* margin-left: 20px;
+        margin-top: 20px; */
+        margin-left: 6px;
+        margin-top: 20px;
+    }
+    
     .ours-futures{
         margin-left: 20px;
         /* text-align: center; */
@@ -71,7 +82,14 @@
         justify-items: center;
         gap: 30px;
      }
-    
+      /* features */
+    .Features{
+        flex-direction: column-reverse;
+    }
+    #Experience-badge{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
     .some-facts,h3 p{
         text-align: center;
     }
@@ -121,6 +139,42 @@
                 <button id="btn2" class="button-primary">Explore More</button>
             </div>
         </section>
+
+        <!-- Features section start -->
+         <section class="Features display-flex">
+            <div>
+                <h3 id="features-section-title" class="section-title brand">Features you will <br> love & enjoy</h3>
+                <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+
+                <!-- features card container -->
+                 <div class="features-card">
+                    <h4 class="features-title">Dexktop & Mobile Version</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                 </div>
+                 <!-- .features-card*3>h4.features-title+p.text-light-gray -->
+                  <div class="features-card">
+                    <h4 class="features-title">Drag & Drop Builder</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                  </div>
+                  <div class="features-card">
+                    <h4 class="features-title">Awesome Modern Design</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                  </div>
+                  <div class="features-card">
+                    <h4 class="features-title">Super Easy to Edit</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                  </div>
+            </div>
+            <div>
+                <img id="girl" src="images/architect.png" alt="">
+                <button id="Experience-badge" class="button-primary">
+                    <span id="Experience-years">10+Years</span>
+                    <br>
+                    <span>Experience</span>
+                </button>
+            </div>
+         </section>
+
          <!-- same factsss -->
           <section class="some-facts">
             <h3 class="section-titles">Some Facts</h3>
